@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --placeholder: #23232e;
+    --block-color: #23232e;
+    --text-h1: #ffffff;
+    --text-color: white;
+    --text-button: #23232e;
+    --bg: #23232e;
+    --shadow: #030305;
+    --bg-hover:#575768;
+    --switch-bg-url: url("./moon-stars.svg");
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --bolinha: white;
+}
+
+.light {
+    --placeholder: #23232e;
+    --block-color: white;
+    --text-h1: #23232e;
+    --text-color: #23232e;;
+    --text-button: white;
+    --bg: #ffffff;
+    --shadow: #030305;
+    --bg-hover:#060633;
+    --switch-bg-url: url("./sun.svg");
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);    
+    --bolinha: #23232e;
+}
+
+body {
+    margin-top: 35vh;
+    background-color: var(--bg); 
+}
+
+.container {
+    display: flex;
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px var(--shadow);
+    
+}
+#switch {
+    position: relative;
+    width: 64px;
+    padding: 10px;
+    margin: 4px auto;    
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: var(--bolinha) var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+
+#switch span {
+    display: block;
+    width: 60px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+    transition: 0.5s;
+}
+
+.light #switch button {
+    right: 0;
+    left: initial;
+    transition: 0.5s;
+}
+
+.block {
+    display: flex;
+    background: var(--block-color);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;   
+}
+
+hr {
+    margin: 10px 10% 10px 10%;
+}
+
+p {
+    display: inline;
+    padding: 5px 0 10px 0;
+    color: var(--text-color);
+}
+
+h1 {
+    color: var(--text-h1);
+}
+
+.sing-in div {
+    height: 20px;
+}
+.login {
+    width: 190px;
+}
+
+.login input{
+    height: 20px;
+    margin: 10px 0 10px 0;
+    padding:3px;
+    background-color: var(--text-h1);
+    color: var(--text-button);
+    transition: 0.5s;
+    border: 0px ;   
+}
+
+input::placeholder {
+    color: var(--text-button);
+  }
+
+.login input:hover {
+    color: var(--text-color);
+    transition: 0.5s;
+    background-color: var(--bg-hover);
+}
+
+.send input{
+    color: var(--text-button);
+    background-color: var(--text-h1);
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+    border: 0px ;
+}
+
+.send input:hover {
+    transition: 0.5s;
+    background-color: var(--bg-hover);
+}

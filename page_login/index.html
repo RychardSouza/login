@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="block">
+            <div >
+                <div>
+                    <h1>Login</h1>
+                    <p>Já tenho uma conta</p>
+                </div>
+            
+                <div class="login">
+                    <input type="text" name="email" id="email" placeholder="E-mail" ><br>
+                </div>
+                <div class="login">
+                    <input type="password" name="senha" id="senha" placeholder="Senha"><br>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="lembrar" id="lembrar"> <p>Lembrar login?</p>
+                </div>
+                 <div class="send"><input type="button" value="Entrar" onclick='entrar()'></div>
+            </div>
+            <hr>
+            <div >
+                <div>
+                    <h1>Criar conta</h1>
+                    <p>Quero criar uma conta</p>
+                </div>
+            
+                <div class="login">
+                    <input type="text" name="email" id="email" placeholder="Digite o e-mail" ><br>
+                </div>
+                 <div class="send"><input type="button" value="Continuar" onclick='entrar()'></div>
+            </div>
+            
+            
+        </div>
+        
+    </main>
+        <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+        </div>
+</body>
+</html>
